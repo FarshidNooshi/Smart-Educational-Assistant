@@ -59,15 +59,15 @@ FUNCTION_BLOCK IOT
 		AND : MIN;
 		OR : MAX;
 
-		RULE 1: IF (Coding IS low) AND (Networking IS low) AND (Embedded is low) THEN output1 IS Not_Recommend;
-        RULE 2: IF (Coding IS low) AND (Networking IS low) AND (Embedded is medium) THEN output1 IS Not_Recommend;
-        RULE 3: IF (Coding IS low) AND (Networking IS low) AND (Embedded is high) THEN output1 IS medium;
-        RULE 4: IF (Coding IS low) AND (Networking IS medium) AND (Embedded is low) THEN output1 IS Not_Recommend;
-        RULE 5: IF (Coding IS low) AND (Networking IS medium) AND (Embedded is medium) THEN output1 IS medium;
-        RULE 6: IF (Coding IS low) AND (Networking IS medium) AND (Embedded is high) THEN output1 IS medium;
-        RULE 7: IF (Coding IS low) AND (Networking IS high) AND (Embedded is low) THEN output1 IS medium;
-        RULE 8: IF (Coding IS low) AND (Networking IS high) AND (Embedded is medium) THEN output1 IS medium;
-        RULE 9: IF (Coding IS low) AND (Networking IS high) AND (Embedded is high) THEN output1 IS medium;
+		RULE 1: IF (Networking IS low) AND (DataBase is low) THEN output1 IS Not_Recommend;
+        RULE 2: IF (Networking IS low) AND (DataBase is medium) THEN output1 IS Not_Recommend;
+        RULE 3: IF (Networking IS low) AND (DataBase is high) THEN output1 IS medium;
+        RULE 4: IF (Networking IS medium) AND (DataBase is low) THEN output1 IS Not_Recommend;
+        RULE 5: IF (Networking IS medium) AND (DataBase is medium) THEN output1 IS medium;
+        RULE 6: IF (Networking IS medium) AND (DataBase is high) THEN output1 IS Recommend;
+        RULE 7: IF (Networking IS high) AND (DataBase is low) THEN output1 IS medium;
+        RULE 8: IF (Networking IS high) AND (DataBase is medium) THEN output1 IS Recommend;
+        RULE 9: IF (Networking IS high) AND (DataBase is high) THEN output1 IS Recommend;
 	END_RULEBLOCK
 
 END_FUNCTION_BLOCK
