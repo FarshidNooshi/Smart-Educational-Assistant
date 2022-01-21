@@ -1,4 +1,4 @@
-FUNCTION_BLOCK IOT
+FUNCTION_BLOCK crypto_network_secu
 
 	VAR_INPUT
 		Maths : REAL; (* description='mathematics ability', min=0, max=10, unit='scale from 10' *)
@@ -55,7 +55,7 @@ FUNCTION_BLOCK IOT
 	END_DEFUZZIFY
 
 
-	RULEBLOCK IOT
+	RULEBLOCK crypto_network_secu
 		AND : MIN;
 		OR : MAX;
 
