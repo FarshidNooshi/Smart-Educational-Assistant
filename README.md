@@ -1,3 +1,7 @@
+# In The Name of GOD
+
 # ResearchTopicRecommender
 
-TODO
+## Fuzzy expert system to recommend research topic for University students based on their abilities
+
+### TODO: write a good readme
